@@ -13,9 +13,8 @@ namespace Day04
             int fullyContainedRanges = 0;
             int overlappingRanges = 0;
 
-            for (int i1 = 0; i1 < input.Length; i1++)
+            foreach (string line in input)
             {
-                string line = input[i1];
                 string[] rangeStrings = line.Split(',');
                 string[] range1String = rangeStrings[0].Split('-');
                 int[] range1 = new int[int.Parse(range1String[1])
